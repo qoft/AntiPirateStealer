@@ -7,7 +7,6 @@ def main():
     try:os.system('taskkill /f /im discord.exe')
     except:pass
     print(f"{Fore.GREEN}[+]{Style.RESET_ALL} Killed discord!")
-    #print uninfecting
     print(f"{Fore.GREEN}[+]{Style.RESET_ALL} Uninfecting discord...")
     with open(f"C:\\Users\\{getpass.getuser()}\\AppData\\Local\\Discord\\app-1.0.9003\\modules\\discord_desktop_core-1\\discord_desktop_core\\index.js", "w") as f: f.write("module.exports = require('./core.asar');")
     print(f"{Fore.GREEN}[+]{Style.RESET_ALL} Discord has been successfully uninfected!")
